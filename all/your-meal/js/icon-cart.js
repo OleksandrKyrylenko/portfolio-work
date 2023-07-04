@@ -7,13 +7,8 @@ function toggleBasket(e){
     if(targetElement.closest('.basket__info') && basketWrapper.children.length > 0){
         document.documentElement.classList.toggle("basket-open");
     }
-    quantity(targetElement)
-}
-function quantity(targetElement) {
-    if (basketWrapper.children.length === 1) {
-        const quantityCount = basketWrapper.querySelector('.item-basket__quantity input').value
-        if(targetElement.dataset.action === 'minus' && parseInt(quantityCount) === 1){
-            document.documentElement.classList.remove("basket-open");
-        }
+    if(basketWrapper.children.length === 0){
+        console.log(5556);
+        document.documentElement.classList.remove("basket-open");
     }
 }

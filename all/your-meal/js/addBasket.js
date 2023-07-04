@@ -58,3 +58,6 @@ function getCurrentInfoProduct(productCard){
     }
     return productInfo
 }
+
+// let prod = products()
+// console.log(prod);

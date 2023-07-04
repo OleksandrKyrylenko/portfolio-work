@@ -24,5 +24,18 @@ function clickQuantity(e){
     if(currentElement.hasAttribute('data-action') && currentElement.closest('.basket__inner')){
         calcBasketPrice()
     }
+    // if (counter) {
+    //     if (parseInt(counter.value) === 0 || isNaN(parseInt(counter.value))) {
+    //       counter.value = 1;
+    //     }
+    //   }
 }
-
+// const counterInputs = document.querySelectorAll('[data-counter]');
+// counterInputs.forEach((input)=>{
+//     input.addEventListener('blur', function() {
+//         const counter = this;
+//         if (parseInt(counter.value) === 0 || isNaN(parseInt(counter.value))) {
+//             counter.value = 1;
+//         }
+//     });
+// })
